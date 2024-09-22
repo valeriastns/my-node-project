@@ -34,11 +34,50 @@ npm init
 node script.js
 ```
 
-### 7. Running tests
+### 7. Installing Jest
+*Install jest by running the following command:*
+```bash
+npm install --save-dev jest
+```
+*and add the following dection to your package.json*
+```
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+### 8. Running tests
 *To run the tests, use the Jest command:*
 ```bash
 npm test
 ```
+
+### 9. Install dependencies
+*Install babel-plugin-istanbul, by running the following command:*
+```bash
+npm install --save-dev babel-plugin-istanbul
+```
+
+## Code Coverage
+*Code coverage is a measure of how much of your code is executed when running tests.*
+### What we measure in this project?
+*The main metrics measured are:*
+-  **Lines:** % of lines in your code that are executed during tests. This shows how much of the written code is being executed, ensuring that no lines of code are left untested.
+-  **Branches:** % of conditional branches (e.g., `if`, `else`) that are tested. This ensures that all possible paths through the code are executed during tests, covering every condition.
+-  **Functions:** % of functions in the code that are executed by the tests. Each function should be covered by at least one test to ensure that it behaves correctly under various conditions.
+
+### 10. Running Code Coverage
+*To check the code coverage, run the following command:*
+```bash
+npx jest --coverage
+```
+
+### 11. Results
+*We can check the result in terminal output or we can open the coverage folder in our project, then Icov-report folder and open index.html file with our Live Server*
+
+
 
 
 
